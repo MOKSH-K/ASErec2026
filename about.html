@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ASE</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <div class="progress" id="progress"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <img class="logo-img" alt="ASE logo">
+            <span>ASE</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="login.html#signup" class="btn-fill">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+
+                <div>
+                    <p class="eyebrow">About ASE</p>
+                    <h1>Where curious students become <span class="mark">software engineers</span></h1>
+                    <p class="lead">
+                        ASE stands for Advanced Software Engineering. We are a student club at Nitte Meenakshi
+                        Institute of Technology, Bengaluru, for people who would rather build something than just
+                        read about it. We run contests, hackathons and drives, and we are always looking for the
+                        next batch of curious people.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#team" class="btn btn-line">Meet the team</a>
+                        <a href="login.html#signup" class="btn btn-solid">Join the club</a>
+                    </div>
+                </div>
+
+                <div class="collage" id="collage"></div>
+
+            </div>
+
+            <div class="stats">
+                <div class="stat"><b data-count-target="events">0</b><span>Events featured</span></div>
+                <div class="stat"><b data-count-target="domains">0</b><span>Team domains</span></div>
+                <div class="stat"><b data-count-target="members">0</b><span>Core members</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="pillars">
+        <div class="wrap pillar-grid">
+            <div class="pillar reveal">
+                <h3>Re-search</h3>
+                <p>Good software starts with a good question. We read, compare and test before we write the first line.</p>
+            </div>
+            <div class="pillar reveal">
+                <h3>Build</h3>
+                <p>Ideas are cheap until they run. Our events push teams to ship something that actually works.</p>
+            </div>
+            <div class="pillar reveal">
+                <h3>Innovate</h3>
+                <p>From city traffic to campus puzzles, we pick real problems and try new ways to solve them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section" id="events">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow">Our Events</p>
+                <h2>What we have been up to</h2>
+                <p class="section-sub">Pick an event to read about it. Click a poster to see it full size.</p>
+            </div>
+
+            <div class="showcase reveal" id="showcase">
+                <div class="tabs" id="tabs"></div>
+                <div class="panel" id="panel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY JOIN -->
+    <section class="section" id="why-join">
+        <div class="wrap why-grid">
+
+            <div class="why-intro reveal">
+                <p class="eyebrow">Why Join</p>
+                <h2>Because the best way to learn software is to ship it</h2>
+                <p>
+                    Classrooms teach you how things work. ASE gives you a place to actually make them
+                    work, with people who are just as curious as you are.
+                </p>
+                <div class="why-note">
+                    <b>No experience? No problem.</b>
+                    Every branch and every year is welcome. Bring curiosity and we will help with the rest.
+                </div>
+            </div>
+
+            <ol class="why-list">
+                <li class="why-item reveal">
+                    <span class="why-num">01</span>
+                    <div>
+                        <h3>Build real projects</h3>
+                        <p>Work on things that run, from club tools to event platforms, instead of only submitting assignments.</p>
+                    </div>
+                </li>
+                <li class="why-item reveal">
+                    <span class="why-num">02</span>
+                    <div>
+                        <h3>Compete and organise</h3>
+                        <p>Take part in hackathons and contests like I-Solve, Code Conspiracy and VibeCraft, and help run the next ones.</p>
+                    </div>
+                </li>
+                <li class="why-item reveal">
+                    <span class="why-num">03</span>
+                    <div>
+                        <h3>Learn from seniors</h3>
+                        <p>Get answers from people who have already been through the same subjects, tools and mistakes.</p>
+                    </div>
+                </li>
+                <li class="why-item reveal">
+                    <span class="why-num">04</span>
+                    <div>
+                        <h3>Find your domain</h3>
+                        <p>Code, research, design, documentation or social media. Pick what suits you, or try more than one.</p>
+                    </div>
+                </li>
+                <li class="why-item reveal">
+                    <span class="why-num">05</span>
+                    <div>
+                        <h3>Find your team</h3>
+                        <p>Meet the people you will form hackathon teams with, and the friends you will keep after college.</p>
+                    </div>
+                </li>
+                <li class="why-item reveal">
+                    <span class="why-num">06</span>
+                    <div>
+                        <h3>Build a portfolio</h3>
+                        <p>Leave with projects, event experience and something real to show on a resume or in an interview.</p>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="eyebrow">Meet the Team</p>
+                <h2>The people behind ASE</h2>
+                <p class="section-sub">Every domain has its own crew. Here is who is in each one.</p>
+            </div>
+
+            <table class="team-table reveal">
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Members</th>
+                    </tr>
+                </thead>
+                <tbody id="teamBody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- JOIN -->
+    <section class="join">
+        <div class="wrap">
+            <h2>Want to be part of this?</h2>
+            <p>Create an account and become part of the next ASE batch.</p>
+            <a href="login.html#signup" class="btn btn-solid">Join the club</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="wrap footer-grid">
+
+            <div class="footer-col">
+                <a href="index.html" class="footer-brand">
+                    <img class="logo-img" alt="ASE logo">
+                    <span>ASE</span>
+                </a>
+                <p>Advanced Software Engineering Club, Nitte Meenakshi Institute of Technology, Bengaluru.</p>
+                <p class="tagline">Re-search. Build. Innovate.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="events.html">Upcoming Events</a>
+                <a href="login.html">Login</a>
+                <a href="login.html#signup">Sign Up</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Find Us</h4>
+                <a href="https://www.instagram.com/ase_club_nmit/" target="_blank" rel="noopener">Instagram: @ase_club_nmit</a>
+                <a href="https://www.nmit.ac.in" target="_blank" rel="noopener">www.nmit.ac.in</a>
+                <p>#ase.nmit</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span id="year"></span> ASE Club, NMIT. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+        <img src="" alt="" id="lbImg">
+    </div>
+
+    <script src="about.js"></script>
+</body>
+
+</html>

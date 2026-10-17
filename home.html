@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE - Advanced Software Engineering Club @NMIT</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <img src="./images/logo.svg" alt="ASE logo">
+            <span>ASE</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="signup.html" class="btn-fill">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="ticker">
+        <div class="ticker-label">Upcoming Events</div>
+        <div class="ticker-window">
+            <div class="ticker-track" id="tickerTrack"></div>
+        </div>
+    </div>
+
+    <main class="hero" id="hero">
+        <div class="hero-content">
+            <p class="small-title">Advanced Software Engineering Club @NMIT</p>
+            <h1>
+                Driving innovation through software
+                <span class="changing-word" id="changingWord"></span><span class="cursor">|</span>
+            </h1>
+            <p class="sub">Learn, build and ship real projects with students who love code.</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn-fill">Know More</a>
+                <a href="signup.html" class="btn-outline">Join the Club</a>
+            </div>
+        </div>
+    </main>
+    
+       
+
+    <script src="about.js"></script>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

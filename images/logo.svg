@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <polygon points="32,3 58,17.5 58,46.5 32,61 6,46.5 6,17.5" fill="#0f2236" stroke="#ffb400" stroke-width="3"/>
+  <text x="32" y="29" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700" fill="#ffb400">&lt;/&gt;</text>
+  <text x="32" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">ASE</text>
+</svg>

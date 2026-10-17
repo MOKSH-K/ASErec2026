@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASE - Login / Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="start">
+            <img src="images/logo.svg" alt="ASE Logo" height="80" width="80" class="kaam">
+        </div>
+
+        <h1 class="welcome">Welcome to <span class="accent">ASE</span></h1>
+
+        <input type="radio" id="login-tab" name="portal-switch" class="tab-input" checked style="display:none;">
+        <input type="radio" id="signup-tab" name="portal-switch" class="tab-input" style="display:none;">
+
+        <div class="toggle-container">
+            <div class="toggle-bg"></div>
+            <label for="login-tab" class="toggle-label label-login">Login</label>
+            <label for="signup-tab" class="toggle-label label-signup">Sign Up</label>
+        </div>
+
+        <div id="status-message"></div>
+
+        <!-- LOGIN SECTION -->
+        <div id="login-section" class="form-section">
+            <h2>Login</h2>
+            <div>
+                <div class="form-group">
+                    <label for="l-email">Email</label>
+                    <input type="email" id="l-email" required placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="l-password">Password</label>
+                    <input type="password" id="l-password" required placeholder="••••••••">
+                </div>
+                <button type="button" class="btn" id="login-btn">Log In</button>
+                <div class="switch-link">
+                    Don't have an account? <label for="signup-tab">Sign up</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIGN UP SECTION -->
+        <div id="signup-section" class="form-section">
+            <h2>Create Account</h2>
+            <div>
+                <div class="form-group">
+                    <label for="s-name">Full Name</label>
+                    <input type="text" id="s-name" required placeholder="Enter full name">
+                </div>
+                <div class="form-group">
+                    <label for="s-email">Email</label>
+                    <input type="email" id="s-email" required placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="s-password">Password</label>
+                    <input type="password" id="s-password" required placeholder="At least 6 characters">
+                </div>
+                <div class="form-group">
+                    <label for="s-confirm">Confirm Password</label>
+                    <input type="password" id="s-confirm" required placeholder="••••••••">
+                </div>
+                <button type="button" class="btn" id="signup-btn">Sign Up</button>
+                <div class="switch-link">
+                    Already have an account? <label for="login-tab">Log in</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

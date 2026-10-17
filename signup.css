@@ -1,0 +1,195 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --navy: #0f2236;
+            --dark: #0a1422;
+            --accent: #ffb400;
+            --text: #e8eef5;
+            --muted: #a9b8c9;
+            --line: #2a4b6b;
+        }
+
+        body {
+            background: var(--dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--navy);
+            border: 1px solid #1c3550;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .toggle-container {
+            display: flex;
+            background: var(--dark);
+            padding: 5px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .toggle-label {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--muted);
+            transition: color 0.3s;
+            z-index: 1;
+        }
+
+        .toggle-label:hover {
+            color: #fff;
+        }
+
+        #login-tab:checked ~ .toggle-container .label-login,
+        #signup-tab:checked ~ .toggle-container .label-signup {
+            color: #111;
+        }
+
+        .toggle-bg {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: calc(50% - 5px);
+            height: calc(100% - 10px);
+            border-radius: 6px;
+            background: var(--accent);
+            transition: transform 0.3s ease;
+            z-index: 0;
+        }
+
+        #login-tab:checked ~ .toggle-container .toggle-bg {
+            transform: translateX(0);
+        }
+
+        #signup-tab:checked ~ .toggle-container .toggle-bg {
+            transform: translateX(100%);
+        }
+
+        .form-section {
+            display: none;
+        }
+
+        #login-tab:checked ~ #login-section,
+        #signup-tab:checked ~ #signup-section {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            background: var(--dark);
+            color: var(--text);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            border-color: var(--accent);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: var(--accent);
+            color: #111;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            transform: translateY(-2px);
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        .kaam {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .welcome {
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 22px;
+        }
+
+        #status-message {
+            display: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .switch-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .switch-link label {
+            display: inline;
+            margin: 0;
+            color: var(--accent);
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .switch-link label:hover {
+            color: #fff;
+            text-decoration: underline;
+        }

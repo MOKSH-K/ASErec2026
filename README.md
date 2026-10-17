@@ -7,7 +7,7 @@
 
 A student club website for the Advanced Software Engineering Club at Nitte Meenakshi Institute of Technology, Bengaluru.
 
-🌐 [Home](home.html) · 📖 [About ASE](about.html) · 🔐 [Login / Sign Up](login.html)
+🌐 [Home](home.html) · 📖 [about ASE](about.html) · 🔐 [Video walkthrough](login.html)
 
 </div>
 
